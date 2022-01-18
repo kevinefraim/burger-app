@@ -1,0 +1,33 @@
+.burger-container {
+  padding: 10px;
+  display: flex;
+  background-color: #000;
+}
+.img-ingrediente {
+  width: 30px;
+  height: 30px;
+}
+
+.list-ingredient {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.ingr-container li {
+  list-style: none;
+}
+.ingr-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-selected {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.burger-selected {
+  color: white;
+}
