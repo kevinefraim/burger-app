@@ -31,3 +31,7 @@
 .burger-selected {
   color: white;
 }
+
+.btn {
+  border-radius: 40px !important;
+}

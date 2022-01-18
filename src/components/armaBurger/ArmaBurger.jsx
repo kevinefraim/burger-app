@@ -58,10 +58,12 @@ const ArmaBurger = () => {
               key={ingr.id}
               disabled={burgerArmada.find((item) => item.id === ingr.id)}
               onClick={() => addIngredientes(ingr)}
-              className="btn btn-outline-warning m-0"
+              className="btn btn-outline-warning mx-0 my-1 btn-ingr"
             >
               <div className="ingr-container">
-                <p>{ingr.nombre}</p>
+                <p>
+                  {ingr.nombre} ${ingr.precio}
+                </p>
                 <img
                   src={require(`../../assets/img/ingredientes/${ingr.imagen}.png`)}
                   alt={ingr.nombre}
@@ -81,7 +83,9 @@ const ArmaBurger = () => {
               className="btn btn-outline-warning m-1 w-100"
             >
               <div className="ingr-container">
-                <p>{ingrediente.nombre}</p>
+                <p>
+                  {ingrediente.nombre} ${ingrediente.precio}
+                </p>
                 <div className="rigth-container">
                   <img
                     src={require(`../../assets/img/ingredientes/${ingrediente.imagen}.png`)}
@@ -100,7 +104,7 @@ const ArmaBurger = () => {
           ))}
           <button className="btn btn-outline-warning m-3 w-100 ">
             <div className="ingr-container">
-              <p>Carne</p>
+              <p>Carne $350</p>
               <img
                 src={require(`../../assets/img/ingredientes/Carne.png`)}
                 alt="carne"
