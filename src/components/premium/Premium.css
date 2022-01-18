@@ -1,17 +1,22 @@
+.premium-container {
+  padding: 4px;
+  width: 100%;
+}
 .card-premium {
   display: flex;
   flex-direction: row;
   margin: 5px;
   align-items: center;
-}
-.card {
+  justify-content: center;
   width: 600px;
 }
-.img-premium {
+
+.img-container img {
   width: 200px;
   height: 140px;
   margin: 0 0 0 8px;
 }
+
 .btn-price {
   width: 100%;
   align-items: center;

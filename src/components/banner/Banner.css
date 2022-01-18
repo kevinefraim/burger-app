@@ -1,7 +1,7 @@
 .banner-container {
   display: flex;
   align-items: center;
-  height: 500px;
+  height: 540px;
   background-color: #000;
 }
 
@@ -17,4 +17,32 @@
 }
 .titles {
   margin: 0 20px;
+}
+
+@media (max-width: 1050px) {
+  .banner-container img {
+    height: 400px;
+    width: 500px;
+  }
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .titles {
+    margin: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .banner-container img {
+    height: 200px;
+    width: 300px;
+  }
+  .titles h1 {
+    font-size: 30px;
+  }
+  .titles h3 {
+    font-size: 20px;
+  }
 }

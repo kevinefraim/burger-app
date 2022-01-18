@@ -20,16 +20,17 @@ const Premium = () => {
       <h2 className="text-center mt-4 mb-4">Las más premium</h2>
       <div className="card-container">
         {premiums.map((premium) => (
-          <div className="card shadow card-premium">
-            <img
-              className="card-img-top img-premium"
-              src={require(`../../assets/img/premium/${premium.imagen}.png`)}
-              alt="Card image cap"
-            />
-            <div className="card-body px-4 py-2">
+          <div className=" shadow card-premium">
+            <div className="img-container">
+              <img
+                src={require(`../../assets/img/premium/${premium.imagen}.png`)}
+                alt="Card image cap"
+              />
+            </div>
+            <div className="card-body px-4 py-0 ">
               <h5 className="card-title">{premium.nombre}</h5>
               {premium.ingredientes.map((ingrediente) => (
-                <p className="card-text d-inline ml-2">{ingrediente}</p>
+                <p className="card-text d-inline ml-2">{ingrediente}. </p>
               ))}
               <div className="btn-price">
                 <button className="btn btn-warning text-light ">
